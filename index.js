@@ -124,7 +124,7 @@ app.post('/webhook/', function (req, res) {
           if(randInt === 0) strPost = 'Tidak';
           sendTextMessage(messagingEvent.sender.id, strPost);
         } else {
-          sendTextMessage(messagingEvent.sender.id, 'Maaf saya hanya bisa menjawab pertanyaan');
+          sendTextMessage(messagingEvent.sender.id, 'Maaf saya hanya bisa menjawab pertanyaan yang dimulai dengan kata apakah dan diakhiri dengan tanda tanya. Contoh: Apakah saya jago ?');
         }
       }); 
     });
